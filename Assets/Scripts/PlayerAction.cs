@@ -247,9 +247,12 @@ public class PlayerAction : MonoBehaviour
     }*/
     void OnTriggerStay2D(Collider2D collision) /////충돌 체크 문제 해결 필요
     {
-        Debug.Log("stay");
-        if (collision.tag == "SnailGrass" && collision.tag == "key" && collision.tag == "book" && collision.tag == "candle")
+
+        if (collision.CompareTag("SnailGrass") && collision.CompareTag("key") && collision.CompareTag("book") && collision.CompareTag("candle"))
+        { 
             nearObject = collision.gameObject;
+            Debug.Log("stay");
+        }
     }
     void OnTriggerExit2D(Collider2D collision)
     {
