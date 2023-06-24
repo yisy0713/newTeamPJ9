@@ -1456,38 +1456,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &742294411
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 742294412}
-  m_Layer: 0
-  m_Name: equip1
-  m_TagString: SnailGrass
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &742294412
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 742294411}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -57.20637, y: 2.708568, z: -0.53733265}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1481811991}
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &884375846
 GameObject:
   m_ObjectHideFlags: 0
@@ -10467,7 +10435,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1096327840
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10485,8 +10453,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -314.7, y: 200.1}
-  m_SizeDelta: {x: 40, y: 40}
+  m_AnchoredPosition: {x: -558, y: 350.5}
+  m_SizeDelta: {x: 32, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1096327841
 MonoBehaviour:
@@ -10508,7 +10476,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0af57957d155bc7428822d76444f40d3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4d3e5f7911626e0418e4f2f16d733933, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10965,7 +10933,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1217971516
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10983,8 +10951,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -359.6, y: 200.1}
-  m_SizeDelta: {x: 40, y: 40}
+  m_AnchoredPosition: {x: -627, y: 351}
+  m_SizeDelta: {x: 30, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1217971517
 MonoBehaviour:
@@ -11006,7 +10974,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e46374170a135cd4295e1045c376fd2f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7afd907783026d3439a8c80477260e3b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11404,7 +11372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d4a427d465acb64896a6ff246ef9e53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1125736916}
   playtime: 0
   isBattle: 0
   Equip1: {fileID: 1217971517}
@@ -11528,7 +11496,7 @@ GameObject:
   - component: {fileID: 1481811993}
   - component: {fileID: 1481811995}
   m_Layer: 0
-  m_Name: "\uB2EC\uD33D\uC774\uD480"
+  m_Name: SnailGrass
   m_TagString: SnailGrass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11542,12 +11510,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1481811990}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.61, y: 2.1, z: 0.53733265}
+  m_LocalPosition: {x: -56.59637, y: 4.808568, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 742294412}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1481811993
 Rigidbody2D:
@@ -12401,7 +12369,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1860515263
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12419,8 +12387,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -223.88, y: 199.3}
-  m_SizeDelta: {x: 40, y: 40}
+  m_AnchoredPosition: {x: -415.7, y: 351}
+  m_SizeDelta: {x: 25, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1860515264
 MonoBehaviour:
@@ -12442,7 +12410,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 741b6e4bd7abb2841be7570b04b60d06, type: 3}
+  m_Sprite: {fileID: 21300000, guid: db9a00b3c05e7a940828b3f2d2882f45, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12607,7 +12575,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1955718833
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12625,8 +12593,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -268.7, y: 200.1}
-  m_SizeDelta: {x: 40, y: 40}
+  m_AnchoredPosition: {x: -489, y: 350.5}
+  m_SizeDelta: {x: 42, y: 46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1955718834
 MonoBehaviour:
@@ -12648,7 +12616,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 43f624ac485593945b107b5e81d351ce, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2c2c96d03de91214eb4e818a1f5a8bcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

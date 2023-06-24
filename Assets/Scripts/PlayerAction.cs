@@ -28,7 +28,7 @@ public class PlayerAction : MonoBehaviour
     bool sDown4;
     bool iDown;
     public item equip; //장착 아이템 
-    
+
 
 
     void Awake()
@@ -40,7 +40,7 @@ public class PlayerAction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
     /*void GetInput()
     {
@@ -70,9 +70,9 @@ public class PlayerAction : MonoBehaviour
         sDown3 = Input.GetButtonDown("Swap3");
         sDown4 = Input.GetButtonDown("Swap4");
 
-        if (sDown1==true)
+        if (sDown1 == true)
             Debug.Log("!!");
-        
+
         // Check Horizontal Move
 
         if (hDown)
@@ -162,37 +162,29 @@ public class PlayerAction : MonoBehaviour
 
         if (iDown && nearObject != null)
         {
-            if(nearObject.tag == "SnailGrass")
+            if (nearObject.tag == "SnailGrass")
             {
                 hasEquip[0] = true;
-
-                //Destroy(nearObject);
+                Debug.Log("달팽이 풀을 얻었다!");
+                Destroy(nearObject);
             }
             else if (nearObject.tag == "key")
             {
                 hasEquip[1] = true;
-
+                Debug.Log("열쇠를 얻었다!");
                 Destroy(nearObject);
             }
             else if (nearObject.tag == "book")
             {
                 hasEquip[2] = true;
-
+                Debug.Log("책을 얻었다!");
                 Destroy(nearObject);
             }
             else if (nearObject.tag == "candle")
             {
                 hasEquip[3] = true;
-
+                Debug.Log("초를 얻었다!");
                 Destroy(nearObject);
-            }
-            else if (nearObject.tag == "GoToOutDoor")
-            {
-        
-            }
-            else if (nearObject.tag == "GoToInsideDoor")
-            {
-
             }
 
 
@@ -248,10 +240,11 @@ public class PlayerAction : MonoBehaviour
     void OnTriggerStay2D(Collider2D collision) /////충돌 체크 문제 해결 필요
     {
 
-        if (collision.CompareTag("SnailGrass") && collision.CompareTag("key") && collision.CompareTag("book") && collision.CompareTag("candle"))
-        { 
+        if (collision.CompareTag("SnailGrass"))
+        {
             nearObject = collision.gameObject;
-            Debug.Log("stay");
+            Debug.Log("Snail");
+            Debug.Log(nearObject.tag);
         }
     }
     void OnTriggerExit2D(Collider2D collision)
