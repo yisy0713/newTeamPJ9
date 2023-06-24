@@ -237,7 +237,7 @@ public class PlayerAction : MonoBehaviour
         }
 
     }*/
-    void OnTriggerStay2D(Collider2D collision) /////충돌 체크 문제 해결 필요
+    void OnTriggerStay2D(Collider2D collision) /////충돌 체크 문제 해결
     {
 
         if (collision.CompareTag("SnailGrass"))
@@ -246,6 +246,25 @@ public class PlayerAction : MonoBehaviour
             Debug.Log("Snail");
             Debug.Log(nearObject.tag);
         }
+        if (collision.CompareTag("key"))
+        {
+            nearObject = collision.gameObject;
+            Debug.Log("key");
+            Debug.Log(nearObject.tag);
+        }
+        if (collision.CompareTag("book"))
+        {
+            nearObject = collision.gameObject;
+            Debug.Log("book");
+            Debug.Log(nearObject.tag);
+        }
+        if (collision.CompareTag("candle"))
+        {
+            nearObject = collision.gameObject;
+            Debug.Log("candle");
+            Debug.Log(nearObject.tag);
+        }
+
     }
     void OnTriggerExit2D(Collider2D collision)
     {
